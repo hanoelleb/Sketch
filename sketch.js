@@ -13,8 +13,8 @@ restart.addEventListener("click", () => {
 document.body.appendChild(restart);
 
 const grid = document.createElement('div');
-grid.style.cssText = "margin-left: auto; margin-right: auto; width: " + gridSize.toString() 
-	+ "; height: " + gridSize.toString() + "; background-color: white;";
+grid.style.cssText = "margin-left: auto; margin-right: auto; width: " + gridSize.toString() +'px' 
+	+ "; height: " + gridSize.toString()+'px' + "; background-color: white; display: flex; flex-wrap: wrap;";
 document.body.appendChild(grid);
 
 function clear() {
@@ -27,11 +27,11 @@ function makeGrid() {
       for (j = 0; j < size; j++) {
           const square = document.createElement('div');
 	  var sideLength = gridSize / size - 2;
-          square.style.cssText = "display: inline-block; margin: 0; padding: 0; " +
+          square.style.cssText = "display: inline-block; margin: 0px; padding: 1em; font-size: 0;" +
 	    "background-color: white; border-style: solid; border-color: gray; border-width: 1px;";
 	  console.log('side length: ' + sideLength+'px'); 
-	  square.style.width = sideLength+'px';
-	  square.style.height = sideLength+'px';
+	  square.style.width = sideLength + 'px';
+	  square.style.height = sideLength + 'px';
 	  square.addEventListener("mouseover", (e) => {
 	      e.target.style.backgroundColor = "black";
   	      console.log("moused over");
