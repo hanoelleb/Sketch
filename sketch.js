@@ -31,7 +31,7 @@ function makeGrid() {
 	    "background-color: white; border-style: solid; border-color: gray; border-width: 1px;";
 	  console.log('side length: ' + sideLength); 
 	  square.style.width = sideLength;
-	  square.style.height = sideLength;
+	  square.style.height = sideLength+'px';
 	  square.addEventListener("mouseover", (e) => {
 	      e.target.style.backgroundColor = "black";
   	      console.log("moused over");
