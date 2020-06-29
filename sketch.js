@@ -29,6 +29,7 @@ function makeGrid() {
 	  var sideLength = gridSize / size - 2;
           square.style.cssText = "display: inline-block; margin: 0; padding: 0; " +
 	    "background-color: white; border-style: solid; border-color: gray; border-width: 1px;";
+	  console.log('side length: ' + sideLength); 
 	  square.style.width = sideLength;
 	  square.style.height = sideLength;
 	  square.addEventListener("mouseover", (e) => {
